@@ -25,6 +25,7 @@ class GoedeDoelTest {
     void eenNieuwDoelHeeftNogGeenOpbrengst() {
         assertThat(doel.getOpbrengst()).isZero();
     }
+    @Test void gelijkeDoelGevenHebbenDezelfdeHashCode() { assertThat(doel).hasSameHashCodeAs(new GoedeDoel(NAAM)); }
 
     @Test
     void doelenMetDezelfdeNaamZijnGelijk() {

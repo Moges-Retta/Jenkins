@@ -22,6 +22,7 @@ public class GoedeDoel {
     public BigDecimal getOpbrengst() {
         return opbrengst;
     }
+    @Override public int hashCode() { return this.naam.toUpperCase().hashCode(); }
 
     @Override
     public boolean equals(Object object) {
