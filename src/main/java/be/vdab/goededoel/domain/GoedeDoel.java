@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 public class GoedeDoel {
 	private final String naam;
+	private BigDecimal opbrengst = BigDecimal.ZERO;
 	private BigDecimal opgebracht;
 
 	public GoedeDoel(String naam) {
@@ -16,5 +17,9 @@ public class GoedeDoel {
 
 	public BigDecimal getOpgebracht() {
 		return opgebracht;
+	}
+
+	public BigDecimal getOpbrengst() {
+		return opbrengst;
 	}
 }
